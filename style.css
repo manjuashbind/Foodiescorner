@@ -1,0 +1,342 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color:rgba(0, 0, 0, 0.904)
+}
+nav{
+    z-index: 5;
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    
+    height: 80px;
+    background-color:black;
+    padding: 5px;
+    position: sticky;
+    top: 0px;
+  }
+    nav ul {
+        display: flex;
+               
+    }
+    nav ul li a{
+        margin: 30px;
+        text-decoration: none;
+        display: flex;
+        color: white;
+    }
+    nav ul li a:hover{
+        color:orange;
+    }
+    nav img{
+        width: 150px;
+        height: 80px;
+        padding-left: 0;
+        margin-left: 0;
+        object-fit: cover;
+
+        
+            }
+    #search{
+        height: 40px;
+        width: 100%;
+        background-color:orange;
+        border: none;
+        font-size: 15px;
+        padding: 8px 40px 8px 20px;
+        border-radius: 10px;
+        
+    }
+    ::placeholder{
+        color: black;
+        font-weight: bold;
+    }
+    #mangglass{
+        position: absolute;
+         top: 4px;
+        right: 3px;
+       font-size: 150%;
+
+    }
+    #input{
+        width: 30%;
+        padding: 0 auto;
+        background-color:orange;
+        position: relative;
+        border-radius: 10px;
+        
+    }
+    #check{
+        display: none;
+    }
+    .checkbtn{
+        display: none;
+    }
+    #hamburger{
+        color: white;
+        font-size: 200%;
+        margin-right: 5px;
+
+    }
+    
+    /* video */
+.main{
+    height: 100vh;
+    width: 100%;
+    background-color: black;
+    margin-bottom: 20px;
+    
+}
+.video{    
+    width: 100%;
+    height: 100vh;
+    
+}
+#video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+/* whats on Mind */
+h2{
+    color: orange;
+    margin-left: 80px;   
+    margin-top: 30px;
+    width: fit-content;
+}
+.whatsonmind{
+    width: 90%;
+    height: auto;
+    display: flex;
+    align-items: center;    
+    margin: 50px auto;
+    padding:  auto;
+    overflow-y: hidden;
+    overflow-x: scroll;    
+}
+.whatsonmind .col1{
+    width: 200px;
+    height: 200px;
+    margin: 10px 20px;
+    padding: 5px;   
+    position: relative;     
+}
+.whatsonmind::-webkit-scrollbar{
+        display: none;   
+} 
+.whatsonmind img{
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    transition: 0.5s;
+    border: 2px solid white;
+    padding :5px;    
+}
+.whatsonmind img:hover{
+    transform: scale(1.2);
+}
+.whatsonmind h4{
+    color: white;
+    text-align: center;
+    font-style: italic;
+    margin: 20px 5px;
+}
+.whatsonmind h4:hover{
+    color: orange;
+}
+/* food cards */
+
+.row1,.row2{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 40px auto;
+    flex-flow: wrap;     
+}
+.col{
+    width: 250px;
+    height: 360px;
+    border: 2px solid black;
+    box-shadow: 2px 2px 5px grey;
+    margin: 10px;
+    background-color: white;
+        }
+   .body{
+    width: 250px;
+    height: 120px ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 0;
+    padding-bottom: 25px;
+    padding-top: 5px;
+   }     
+.col:hover{
+    background-color: lightgray;
+}
+#foodcards p{
+    color: red;
+    font-weight: 600;
+}
+img{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;    
+}
+button{
+    border: 2px solid black;
+    border-radius: 5px;
+    font-weight: bold;
+    color: black;
+    padding: 5px;
+    background-color: orange;
+    transition: 0.3s;
+    
+    }
+    button:hover{
+        background-color: black;
+        color:white;
+    }
+    footer{
+        background-color:black ;
+        height: 150px;
+        text-align: center;
+        padding: 10px;
+        color: white;
+        
+    }
+    footer .img1{
+        width: 50px;
+        height: 50px;
+        margin: 5px;
+        border-radius: 50%;
+
+    }
+    footer .img2{
+        width: 220px;
+        height: 100px;
+        object-fit: cover;
+        background-color: white;
+        border: none;
+        padding: 5px;
+    }
+    @media (max-width:600px)
+    {
+        .main{
+            width: 100%;
+            height: 100vh;
+            overflow: hidden;
+        }
+        nav img{
+            width: 90px;
+            height: 70px;
+            padding: 0;
+            margin: 0;
+        }
+        nav{
+            height: 80px;
+           
+        }
+        #search{
+         height: 40px;
+        }
+        #input{
+            width: 50%;
+        }      
+        
+        .video{
+            width: 100%;
+            height: 100vh;
+            margin-top: 0;            
+        }
+    video{
+        width: 100%;
+        height: 100vh;
+        object-fit: cover;
+    }
+    /* whats on mind */
+    h2{
+        font-size: 20px;
+        margin-top: 20px;
+        align-items: center;
+    }  
+
+    /* Foodcards */
+    .row1,.row2{
+        display: flex;
+        flex-direction: column;
+    }
+    .col{
+        margin: 20px auto;
+    }
+    /* footer */
+    footer .img2{
+        width:150px ;
+        height: 100px;
+        padding: 2px;
+        object-fit: contain;
+    }
+    footer .img1{
+        width:30px;
+        height: 30px; 
+       }
+    }
+    @media (max-width:768px){
+        .checkbtn{
+            display: block;
+        }
+        ul {
+            position: fixed;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            
+            top: 80px;
+            right:-100%;
+            background-color: orange;
+            width: 300px;
+            transition: 1s;
+            z-index: 5;
+            box-shadow: -3px 3px 3px black;    
+                                     
+        }
+        
+        nav ul li a{
+            color: black;
+            font-weight: bold;
+        }
+        nav ul li a:hover{
+            
+            color: white;
+            font-weight: bold;
+        }        
+       
+        #check:checked ~ ul{            
+            right: 0;
+        }
+        h2{
+            margin: 0 auto;            
+        }
+        #input{
+            width: 50%;
+                }
+    }
+    @media(min-width:768px) and (max-width:992px){
+        /* .row1,.row2{
+            width: 80%;
+        }
+        .whatsonmind{
+            width: 50%;
+        } */
+        nav ul li a{
+            font-size: 14px;
+            margin: 15px;
+        }
+    }
